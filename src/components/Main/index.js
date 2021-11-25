@@ -54,26 +54,28 @@ export function Main() {
                     </S.IntroAbout>
                 </S.BoxContentAbout>
             </S.ContainerAbout>
-        <S.ContainerSlide>
-            <h2>{titleprojetos}</h2>
-            <div>
+            <S.ContainerProject>
+                <S.BoxTitleProject>
+                    <S.TitleMyProjects>{titleprojetos}</S.TitleMyProjects>
+                </S.BoxTitleProject>
                 <S.BoxProject>
-                    <S.TemplateProject src={imgrecipes.url} alt=""/>
-                    <h2>{titlerecipes}</h2>
-                    <p>{textrecipes}</p>
+                    <S.CardProject>
+                        <S.TemplateProject src={imgrecipes.url} alt=""/>
+                        <h2>{titlerecipes}</h2>
+                        <p>{textrecipes}</p>
+                    </S.CardProject>
+                    <S.CardProject>
+                        <S.TemplateProject src={imgtaxis.url} alt=""/>
+                        <h2>{titletaxis}</h2>
+                        <p>{texttaxis}</p>
+                    </S.CardProject>
+                    <S.CardProject>
+                        <S.TemplateProject src={imgvalorant.url} alt=""/>
+                        <h2>{titlevalorant}</h2>
+                        <p>{textvalorant}</p>
+                    </S.CardProject>
                 </S.BoxProject>
-                <S.BoxProject>
-                    <S.TemplateProject src={imgtaxis.url} alt=""/>
-                    <h2>{titletaxis}</h2>
-                    <p>{texttaxis}</p>
-                </S.BoxProject>
-                <S.BoxProject>
-                    <S.TemplateProject src={imgvalorant.url} alt=""/>
-                    <h2>{titlevalorant}</h2>
-                    <p>{textvalorant}</p>
-                </S.BoxProject>
-            </div>
-        </S.ContainerSlide>
+            </S.ContainerProject>
         </div>
     )
 }
