@@ -1,16 +1,20 @@
 import styled from 'styled-components'
 
-
+export const Main = styled.div` 
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 export const ContainerAbout = styled.div` 
-    height: 90vh;
-    background-color: red;
+    width: 90%;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     padding:30px;
 `
-export const BoxTitleAbout = styled.div` 
-    background-color: white;
+export const BoxTitleAbout = styled.div`
     width: 50%;
     height: 15%;
     display: flex;
@@ -18,9 +22,11 @@ export const BoxTitleAbout = styled.div`
 `
 export const TitleAbout = styled.p` 
     font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #6F7FFB;
 `
 export const BoxContentAbout = styled.div` 
-    background-color: blue;
     height: 80%;
     display: flex;
     align-items: center;
@@ -31,7 +37,6 @@ export const BoxImageAbout = styled.div`
     height: 80%;
     display: flex;
     align-items: center;
-    background-color: green;
 `
 export const ImageAbout = styled.img` 
     width: 100%;
@@ -42,49 +47,84 @@ export const IntroAbout = styled.div`
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    background-color: yellow;
 `
 export const TextAbout = styled.div` 
     font-size: 2vw;
+    text-align: justify;
+    color: #6F7FFB;
 `
 
 
 export const ContainerProject = styled.div` 
-    height: 90vh;
+    width: 90%;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     padding:30px;
-    background-color: violet;
 `
-export const BoxTitleProject = styled.div` 
-    background-color: white;
-    width: 50%;
+export const BoxTitleProject = styled.div`
+    width: 70%;
     height: 15%;
     display: flex;
     align-items: center;
 `
 export const TitleMyProjects = styled.p` 
     font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #6F7FFB;
 `
 export const BoxProject = styled.div` 
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: green;
 `
 export const CardProject = styled.div` 
-    width: 30%;
-    height: 100%;
+    width: 23vw;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    background-color: red;
-
+    position:relative;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:  15px 15px 27px black, -15px -15px 27px black;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover{
+        height: 0%;
+        cursor: pointer;
+    }
 `
-export const TemplateProject = styled.img` 
-    width: 350px;
+export const Convertion = styled.div` 
+    
+`
+export const Imagem = styled.div` 
+    background-image: url(${props => props.back});
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 60%;
+    padding:1px 32px;
+    position:Absolute;
+    top:0px;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    
+`
+export const Discription = styled.div` 
+    background-color: #FAFAFC;
+    height: 40%;
+    width: 100%;
+    position:absolute;
+    bottom:0px;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 8px 16px;
+    text-align:center;
+    height: 0%;
+    cursor: pointer;
 `
