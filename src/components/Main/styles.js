@@ -94,13 +94,10 @@ export const CardProject = styled.div`
     box-shadow:  15px 15px 27px black, -15px -15px 27px black;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-    &:hover{
-        height: 0%;
-        cursor: pointer;
-    }
+    
 `
 export const Convertion = styled.div` 
-    
+
 `
 export const Imagem = styled.div` 
     background-image: url(${props => props.back});
@@ -113,8 +110,10 @@ export const Imagem = styled.div`
     position:Absolute;
     top:0px;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-
     
+    ${CardProject}:hover & {
+       height:100%;
+    }
 `
 export const Discription = styled.div` 
     background-color: #FAFAFC;
@@ -125,6 +124,9 @@ export const Discription = styled.div`
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 8px 16px;
     text-align:center;
-    height: 0%;
-    cursor: pointer;
+
+    ${CardProject}:hover & {
+        height:0px;
+        padding:0px 16px;
+    }
 `

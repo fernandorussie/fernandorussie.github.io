@@ -17,13 +17,16 @@ export function Footer() {
                     logo {
                       url
                     }
-                }
+                    contentcontact
+                    contentemail
+                    contentgithub
+                  }
             }
         }
 
     `)
 
-    const { btncontact,btnemail,btngithub,btnhome,copyright,logo} = data.blogdata.footers[0]
+    const { contentcontact,contentemail,contentgithub,btncontact,btnemail,btngithub,btnhome,copyright,logo} = data.blogdata.footers[0]
 
     return (
         <S.ContainerFooter>
@@ -32,6 +35,9 @@ export function Footer() {
                     <S.Logo src={logo.url} alt="" />
                 </S.BoxLogo>
                 <S.NavFooter>
+                    <p>{contentcontact}</p>
+                    <p>{contentemail}</p>
+                    <p>{contentgithub}</p>
                     <S.BtnNav>{btnhome}</S.BtnNav>
                     <S.BtnNav>{btngithub}</S.BtnNav>
                     <S.BtnNav>{btnemail}</S.BtnNav>

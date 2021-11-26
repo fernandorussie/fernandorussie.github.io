@@ -55,13 +55,13 @@ export function Main() {
                 </S.BoxTitleProject>
                 <S.BoxProject>
                     <S.CardProject>
-                        <S.Convertion>
-                            <S.Imagem back={imgrecipes.url}></S.Imagem>
-                            <S.Discription>
-                                <h2>{titlerecipes}</h2>
-                                <p>{textrecipes}</p>
-                            </S.Discription>
-                        </S.Convertion>
+                        
+                        <S.Imagem back={imgrecipes.url}></S.Imagem>
+                        <S.Discription>
+                            <h2>{titlerecipes}</h2>
+                            <p>{textrecipes}</p>
+                        </S.Discription>
+                        
                     </S.CardProject>
                     <S.CardProject>
                     <S.Imagem back={imgtaxis.url}></S.Imagem>
