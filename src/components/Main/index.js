@@ -55,26 +55,24 @@ export function Main() {
                 </S.BoxTitleProject>
                 <S.BoxProject>
                     <S.CardProject>
-                        
                         <S.Imagem back={imgrecipes.url}></S.Imagem>
                         <S.Discription>
-                            <h2>{titlerecipes}</h2>
-                            <p>{textrecipes}</p>
+                            <S.Name>{titlerecipes}</S.Name>
+                            <S.Subtitle>{textrecipes}</S.Subtitle>
                         </S.Discription>
-                        
                     </S.CardProject>
                     <S.CardProject>
                     <S.Imagem back={imgtaxis.url}></S.Imagem>
                         <S.Discription>
-                            <h2>{titletaxis}</h2>
-                            <p>{texttaxis}</p>
+                            <S.Name>{titletaxis}</S.Name>
+                            <S.Subtitle>{texttaxis}</S.Subtitle>
                         </S.Discription>
                     </S.CardProject>
                     <S.CardProject>
                         <S.Imagem back={imgvalorant.url}></S.Imagem>
                         <S.Discription>
-                            <h2>{titlevalorant}</h2>
-                            <p>{textvalorant}</p>
+                            <S.Name>{titlevalorant}</S.Name>
+                            <S.Subtitle>{textvalorant}</S.Subtitle>
                         </S.Discription>
                     </S.CardProject>
                 </S.BoxProject>

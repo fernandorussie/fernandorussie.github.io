@@ -1,6 +1,6 @@
 import React from 'react'
 import * as S from './styles'
-
+import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from 'gatsby'
 
 export function Footer() {
@@ -30,18 +30,26 @@ export function Footer() {
 
     return (
         <S.ContainerFooter>
-            <S.IntroFooter>
                 <S.BoxLogo>
                     <S.Logo src={logo.url} alt="" />
+                    <S.StyledLink to="/#home">{btnhome}</S.StyledLink>
                 </S.BoxLogo>
+            <S.IntroFooter>
                 <S.NavFooter>
-                    <p>{contentcontact}</p>
-                    <p>{contentemail}</p>
-                    <p>{contentgithub}</p>
-                    <S.BtnNav>{btnhome}</S.BtnNav>
-                    <S.BtnNav>{btngithub}</S.BtnNav>
-                    <S.BtnNav>{btnemail}</S.BtnNav>
-                    <S.BtnNav>{btncontact}</S.BtnNav>
+                    <S.BoxBtn>
+                        <S.StyledLink to="https://github.com/fernandorussie" target="_blank">
+                            {btngithub}
+                        </S.StyledLink>
+                        <p>{contentgithub}</p>
+                    </S.BoxBtn>
+                    <S.BoxBtn>
+                        <S.StyledLink to="https://wa.me/5521987654321?text=Ol%C3%A1%2C+seja+bem+vindo.+Agende+um+hor%C3%A1rio%21" target="_blank">{btncontact}</S.StyledLink>
+                        <p>{contentcontact}</p>
+                    </S.BoxBtn>
+                    <S.BoxBtn>
+                        <S.StyledLink to="https://mail.google.com/mail/u/0/" target="_blank">{btnemail}</S.StyledLink>
+                        <p>{contentemail}</p>
+                    </S.BoxBtn>
                 </S.NavFooter>
             </S.IntroFooter>
             <S.BoxCopy>

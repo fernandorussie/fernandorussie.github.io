@@ -38,7 +38,7 @@ export function Header() {
 
     return (
         <S.Body>
-            <S.Container back={backgroundheader.url}>
+            <S.Container id="home" back={backgroundheader.url}>
                 <S.BoxCenter>
                     <S.NavMenu>
                         <S.NavBtn>{btnhome}</S.NavBtn>

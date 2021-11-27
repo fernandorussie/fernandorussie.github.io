@@ -4,3 +4,21 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
+* {
+    scrollbar-width:thin;
+    scrollbar-color: #6F7FFB transparent;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #6F7FFB;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+  }
