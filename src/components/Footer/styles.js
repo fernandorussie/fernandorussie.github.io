@@ -8,7 +8,8 @@ export const ContainerFooter =styled.div`
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
-    background-color: #6F7FFB;
+    background-color: #6420ff
+;
 `
 export const IntroFooter =styled.div` 
     width: 85%;

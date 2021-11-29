@@ -1,6 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
 
 export function Header() {
 
@@ -38,20 +39,25 @@ export function Header() {
 
     return (
         <S.Body>
-            <S.Container id="home" back={backgroundheader.url}>
-                <S.BoxCenter>
-                    <S.NavMenu>
-                        <S.NavBtn>{btnhome}</S.NavBtn>
-                        <S.NavBtn>{btnabout}</S.NavBtn>
-                        <S.NavBtn>{btnhelp}</S.NavBtn>
-                    </S.NavMenu>
-                    <S.NavSocial>
-                        <S.BtnSocial src={btngithub.url} alt=""/>
-                        <S.BtnSocial src={btninstagram.url} alt=""/>
-                        <S.BtnSocial src={btntwitter.url} alt=""/>
-                    </S.NavSocial>
-                </S.BoxCenter>
-            </S.Container>
+          <S.Container id="home">
+            <S.NavMenu>
+                <S.Btn to="/#project">{btnhome}</S.Btn>
+                <S.Btn to="/#">{btnabout}</S.Btn>
+                <S.Btn to="/#contact">{btnhelp}</S.Btn>
+            </S.NavMenu>
+            <S.BoxLogo>
+              <S.Avatar src={backgroundheader.url} alt=""/>
+              <S.BoxText>
+                <S.Title>{titleheader}</S.Title>
+                <S.SubTitle>{paragraphheader}</S.SubTitle>
+              </S.BoxText>
+            </S.BoxLogo>
+            <S.NavSocial>
+                <S.BtnSocial src={btngithub.url} alt=""/>
+                <S.BtnSocial src={btninstagram.url} alt=""/>
+                <S.BtnSocial src={btntwitter.url} alt=""/>
+            </S.NavSocial>
+          </S.Container>
         </S.Body>
     )
 }

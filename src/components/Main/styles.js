@@ -25,7 +25,7 @@ export const TitleAbout = styled.p`
     font-size: 5vw;
     font-weight: 900;
     text-transform: uppercase;
-    color: #6F7FFB;
+    color: #6420ff;
     cursor: pointer;
 `
 export const BoxContentAbout = styled.div` 
@@ -59,7 +59,7 @@ export const IntroAbout = styled.div`
 export const TextAbout = styled.div` 
     font-size: 2vw;
     text-align: justify;
-    color: #6F7FFB;
+    color: #6420ff;
 `
 
 export const ContainerProject = styled.div` 
@@ -69,7 +69,7 @@ export const ContainerProject = styled.div`
     justify-content: space-around;
     flex-direction: column;
     padding:30px;
-    border-bottom: solid 2px #6F7FFB;
+    border-bottom: solid 2px #6420ff;
 `
 export const BoxTitleProject = styled.div`
     width: 70%;
@@ -82,7 +82,7 @@ export const TitleMyProjects = styled.p`
     font-weight: 900;
     text-transform: uppercase;
     cursor: pointer;
-    color: #6F7FFB;
+    color: #6420ff;
 `
 export const BoxProject = styled.div` 
     width:100%;

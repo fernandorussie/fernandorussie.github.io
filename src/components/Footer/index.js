@@ -1,6 +1,5 @@
 import React from 'react'
 import * as S from './styles'
-import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from 'gatsby'
 
 export function Footer() {
@@ -31,11 +30,11 @@ export function Footer() {
     return (
         <S.ContainerFooter>
                 <S.BoxLogo>
-                    <S.Logo src={logo.url} alt="" />
-                    <S.StyledLink to="/#home">{btnhome}</S.StyledLink>
+                    <S.Logo to="/#home" src={logo.url} alt="" />
+                    <S.StyledLink>{btnhome}</S.StyledLink>
                 </S.BoxLogo>
             <S.IntroFooter>
-                <S.NavFooter>
+                <S.NavFooter id="contact">
                     <S.BoxBtn>
                         <S.StyledLink to="https://github.com/fernandorussie" target="_blank">
                             {btngithub}
