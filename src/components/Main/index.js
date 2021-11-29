@@ -46,23 +46,21 @@ export function Main() {
                     <S.TitleMyProjects>{titleprojetos}</S.TitleMyProjects>
                 </S.BoxTitleProject>
                 <S.BoxProject>
-                    <S.CardProject to="https://recipesvnw.netlify.app" target="_blank"
-                    data-aos="zoom-in">
+                    <S.CardProject to="https://recipesvnw.netlify.app" target="_blank">
                         <S.Imagem back={imgrecipes.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titlerecipes}</S.Name>
                             <S.Subtitle>{textrecipes}</S.Subtitle>
                         </S.Discription>
                     </S.CardProject>
-                    <S.CardProject to="https://github.com/fernandorussie/TaxiProject" target="_blank" data-aos="zoom-in">
+                    <S.CardProject to="https://github.com/fernandorussie/TaxiProject" target="_blank" >
                     <S.Imagem back={imgtaxis.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titletaxis}</S.Name>
                             <S.Subtitle>{texttaxis}</S.Subtitle>
                         </S.Discription>
                     </S.CardProject>
-                    <S.CardProject to="https://valorantvnw.netlify.app" target="_blank"
-                    data-aos="zoom-in">
+                    <S.CardProject to="https://valorantvnw.netlify.app" target="_blank">
                         <S.Imagem back={imgvalorant.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titlevalorant}</S.Name>
