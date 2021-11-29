@@ -54,7 +54,7 @@ export function Main() {
                             <S.Subtitle>{textrecipes}</S.Subtitle>
                         </S.Discription>
                     </S.CardProject>
-                    <S.CardProject data-aos="zoom-in">
+                    <S.CardProject to="https://github.com/fernandorussie/TaxiProject" target="_blank" data-aos="zoom-in">
                     <S.Imagem back={imgtaxis.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titletaxis}</S.Name>
