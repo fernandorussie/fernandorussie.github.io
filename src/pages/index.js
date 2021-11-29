@@ -12,7 +12,7 @@ export default function Index() {
     <div>
       <Helmet>
         <title>MyBlog</title>
-        <link href="https://o.remove.bg/downloads/91a3fa05-f4d1-4b89-8e29-eb43c6277c3e/IMG_0426.jpg-removebg-preview.png" rel="icon" type="image/x-icon" />
+        <link href="" rel="icon" type="image/x-icon" />
       </Helmet>
       <Header />
       <Main />

@@ -1,6 +1,6 @@
 import React from 'react'
 import * as S from './styles'
-
+import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from 'gatsby'
 import Carousel from 'nuka-carousel'
 import Slider from 'react-slick'
@@ -54,7 +54,7 @@ export function Main() {
                     <S.TitleMyProjects>{titleprojetos}</S.TitleMyProjects>
                 </S.BoxTitleProject>
                 <S.BoxProject>
-                    <S.CardProject>
+                    <S.CardProject to="https://recipesvnw.netlify.app" target="_blank">
                         <S.Imagem back={imgrecipes.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titlerecipes}</S.Name>
@@ -68,7 +68,7 @@ export function Main() {
                             <S.Subtitle>{texttaxis}</S.Subtitle>
                         </S.Discription>
                     </S.CardProject>
-                    <S.CardProject>
+                    <S.CardProject to="https://valorantvnw.netlify.app" target="_blank">
                         <S.Imagem back={imgvalorant.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titlevalorant}</S.Name>

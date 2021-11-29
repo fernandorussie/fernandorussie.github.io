@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 export const Main = styled.div` 
     background-color: #1A1A1A;
@@ -28,18 +29,18 @@ export const TitleAbout = styled.p`
     cursor: pointer;
 `
 export const BoxContentAbout = styled.div` 
-    min-height: 60%;
+    width:100%;
+    min-height: 60vh;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
 `
 export const BoxImageAbout = styled.div` 
-    width: 60%;
-    height: 80%;
+    width: 50%;
+    min-width: 300px;
     display: flex;
     align-items: center;
-    margin-right: 50px;
 `
 export const ImageAbout = styled.img` 
     width: 100%;
@@ -91,7 +92,7 @@ export const BoxProject = styled.div`
     align-items: center;
     justify-content: space-around;
 `
-export const CardProject = styled.div` 
+export const CardProject = styled(Link)` 
     position:relative;
     width: 25%;
     min-width: 300px;
@@ -102,6 +103,8 @@ export const CardProject = styled.div`
     flex-direction: column;
     margin:30px;
     padding:20px;
+    text-decoration: none;
+    color: black;
     border-radius:16px;
     overflow:hidden;
     cursor: pointer;
@@ -132,6 +135,7 @@ export const Discription = styled.div`
     width: 100%;
     padding: 8px 16px;
     text-align:center;
+    text-decoration: none;
     background-color: #FAFAFC;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 
@@ -144,10 +148,11 @@ export const Name = styled.h2`
     font-size: 2vw;
     font-weight:900;
     text-transform: uppercase;
+    text-decoration: none;
     margin:15px 0px;
 `
 export const Subtitle = styled.p` 
     font-size: 1.4vw;
-    
+    text-decoration: none;
     margin-bottom:15px;
 `

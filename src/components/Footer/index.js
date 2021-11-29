@@ -40,15 +40,15 @@ export function Footer() {
                         <S.StyledLink to="https://github.com/fernandorussie" target="_blank">
                             {btngithub}
                         </S.StyledLink>
-                        <p>{contentgithub}</p>
+                        <S.ContentLink>{contentgithub}</S.ContentLink>
                     </S.BoxBtn>
                     <S.BoxBtn>
                         <S.StyledLink to="https://wa.me/5521987654321?text=Ol%C3%A1%2C+seja+bem+vindo.+Agende+um+hor%C3%A1rio%21" target="_blank">{btncontact}</S.StyledLink>
-                        <p>{contentcontact}</p>
+                        <S.ContentLink>{contentcontact}</S.ContentLink>
                     </S.BoxBtn>
                     <S.BoxBtn>
                         <S.StyledLink to="https://mail.google.com/mail/u/0/" target="_blank">{btnemail}</S.StyledLink>
-                        <p>{contentemail}</p>
+                        <S.ContentLink>{contentemail}</S.ContentLink>
                     </S.BoxBtn>
                 </S.NavFooter>
             </S.IntroFooter>

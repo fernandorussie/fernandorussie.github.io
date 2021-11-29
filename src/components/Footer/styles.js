@@ -27,9 +27,11 @@ export const NavFooter =styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 `
 export const BoxBtn = styled.div` 
     width: 25%;
+    min-width: 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -48,6 +50,9 @@ export const StyledLink = styled(Link)`
     margin-bottom: 5px;
     cursor: pointer;
     text-decoration: none;
+`
+export const ContentLink = styled.p` 
+    font-size: 1.8vw;
 `
 export const BtnNav = styled.div` 
     display: flex;

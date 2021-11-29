@@ -1,9 +1,12 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-    overflow: overlay;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  
+}
+body{
+  overflow: overlay;
 }
 ::-webkit-scrollbar {
   width: 5px;
