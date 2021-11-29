@@ -8,7 +8,7 @@ export const Main = styled.div`
 `
 export const ContainerAbout = styled.div` 
     width: 90%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -28,9 +28,10 @@ export const TitleAbout = styled.p`
     cursor: pointer;
 `
 export const BoxContentAbout = styled.div` 
-    height: 60%;
+    min-height: 60%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
 `
 export const BoxImageAbout = styled.div` 
@@ -62,7 +63,7 @@ export const TextAbout = styled.div`
 
 export const ContainerProject = styled.div` 
     width: 90%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -83,6 +84,7 @@ export const TitleMyProjects = styled.p`
     color: #6F7FFB;
 `
 export const BoxProject = styled.div` 
+    width:100%;
     min-height: 60vh;
     display: flex;
     flex-wrap: wrap;
@@ -91,12 +93,15 @@ export const BoxProject = styled.div`
 `
 export const CardProject = styled.div` 
     position:relative;
-    width: 400px;
-    height: 500px;
+    width: 25%;
+    min-width: 300px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin:30px;
+    padding:20px;
     border-radius:16px;
     overflow:hidden;
     cursor: pointer;
