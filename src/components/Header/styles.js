@@ -9,12 +9,12 @@ export const Body = styled.div`
     background-color: #6420ff;
 `
 export const Container = styled.div` 
+    width: 100%;
+    height:85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height:80vh;
 `
 export const BoxLogo = styled.div` 
     display: flex;
@@ -41,20 +41,29 @@ export const NavMenu = styled.div`
     align-items: center;
     justify-content: space-around;
 `
-export const Btn = styled(Link)`  
+export const Btn = styled.a`  
     font-size: 1.5vw;
     font-weight: 900;
     text-transform: uppercase;
+    text-decoration: none;
     color: white;
     cursor: pointer;
 `
 export const NavSocial = styled.div` 
-    width: 10%;
+    width: 30%;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
 `
 export const BtnSocial = styled.img` 
     width: 30px;
+    fill: white;
     cursor: pointer;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    &:hover{
+        fill: green;
+        background-color: white;
+        margin-bottom: 7px;
+    }
 `

@@ -17,8 +17,9 @@ export const IntroFooter =styled.div`
     align-items: center;
     justify-content: center;
 `
-export const BoxLogo =styled.div` 
+export const BoxLogo =styled.a` 
     cursor: pointer;
+    text-decoration: none;
 `
 export const Logo =styled.img` 
     width: 6vw;

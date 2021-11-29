@@ -29,8 +29,8 @@ export function Footer() {
 
     return (
         <S.ContainerFooter>
-                <S.BoxLogo>
-                    <S.Logo to="/#home" src={logo.url} alt="" />
+                <S.BoxLogo href="/#home">
+                    <S.Logo src={logo.url} alt="" />
                     <S.StyledLink>{btnhome}</S.StyledLink>
                 </S.BoxLogo>
             <S.IntroFooter>
@@ -46,7 +46,7 @@ export function Footer() {
                         <S.ContentLink>{contentcontact}</S.ContentLink>
                     </S.BoxBtn>
                     <S.BoxBtn>
-                        <S.StyledLink to="mailto:fernando.felip@precisaser.org" target="_blank">{btnemail}</S.StyledLink>
+                        <S.StyledLink to="https://mail.google.com/mail/u/0/#inbox" target="_blank">{btnemail}</S.StyledLink>
                         <S.ContentLink>{contentemail}</S.ContentLink>
                     </S.BoxBtn>
                 </S.NavFooter>
