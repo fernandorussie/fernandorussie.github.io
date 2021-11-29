@@ -41,7 +41,7 @@ export function Header() {
         <S.Body>
           <S.Container id="home">
             <S.NavMenu >
-                <S.Btn href="#project">{btnhome}</S.Btn>
+                <S.Btn href="#project" >{btnhome}</S.Btn>
                 <S.Btn href="#about">{btnabout}</S.Btn>
                 <S.Btn href="#contact">{btnhelp}</S.Btn>
             </S.NavMenu>

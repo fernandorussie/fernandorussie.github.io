@@ -69,7 +69,7 @@ export function Main() {
                     </S.CardProject>
                 </S.BoxProject>
             </S.ContainerProject>
-            <S.ContainerAbout id="#about">
+            <S.ContainerAbout id="about">
                 <S.BoxTitleAbout>
                     <S.TitleAbout>{titleabout}</S.TitleAbout>
                 </S.BoxTitleAbout>

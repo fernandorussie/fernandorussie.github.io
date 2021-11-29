@@ -122,6 +122,7 @@ export const SubTitle = styled.h3`
 `
 export const NavMenu = styled.div` 
     width: 30%;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -133,6 +134,12 @@ export const Btn = styled.a`
     text-decoration: none;
     color: white;
     cursor: pointer;
+
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    &:hover{
+      transform: scale(1.02);
+      margin-bottom: 7px;
+    }
 `
 export const NavSocial = styled.div` 
     width: 30%;
@@ -147,27 +154,8 @@ export const BtnSocial = styled.img`
     cursor: pointer;
 
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    
-    animation: text-focus-in 1s linear 1s both;
-
-    @keyframes text-focus-in {
-        0% {
-            -webkit-filter: blur(12px);
-                    filter: blur(12px);
-            opacity: 0;
-        }
-        100% {
-            -webkit-filter: blur(0px);
-                    filter: blur(0px);
-            opacity: 1;
-        }
-    }
-    
     &:hover{
         fill: green;
         margin-bottom: 7px;
-
-        
-
     }
 `

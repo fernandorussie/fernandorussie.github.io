@@ -29,10 +29,13 @@ export function Footer() {
 
     return (
         <S.ContainerFooter>
-                <S.BoxLogo href="/#home">
+            <S.AvatarFixed>
+                <S.BoxLogo href="#home">
                     <S.Logo src={logo.url} alt="" />
                     <S.StyledLink>{btnhome}</S.StyledLink>
                 </S.BoxLogo>
+            </S.AvatarFixed>
+                
             <S.IntroFooter>
                 <S.NavFooter id="contact">
                     <S.BoxBtn>
