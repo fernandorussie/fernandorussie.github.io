@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <div>
       <Helmet>
-        <title>MyBlog</title>
+        <title>Ferlip</title>
         <link href="" rel="icon" type="image/x-icon" />
       </Helmet>
       <Header />

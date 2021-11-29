@@ -47,7 +47,7 @@ export function Footer() {
                         <S.ContentLink>{contentcontact}</S.ContentLink>
                     </S.BoxBtn>
                     <S.BoxBtn>
-                        <S.StyledLink to="https://mail.google.com/mail/u/0/" target="_blank">{btnemail}</S.StyledLink>
+                        <S.StyledLink to="mailto:fernando.felip@precisaser.org" target="_blank">{btnemail}</S.StyledLink>
                         <S.ContentLink>{contentemail}</S.ContentLink>
                     </S.BoxBtn>
                 </S.NavFooter>
