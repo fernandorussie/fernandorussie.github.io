@@ -46,7 +46,7 @@ export function Main() {
                     <S.TitleMyProjects>{titleprojetos}</S.TitleMyProjects>
                 </S.BoxTitleProject>
                 <S.BoxProject>
-                    <S.CardProject to="https://recipesvnw.netlify.app" target="_blank">
+                    <S.CardProject to="/recipes">
                         <S.Imagem back={imgrecipes.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titlerecipes}</S.Name>

@@ -3,7 +3,7 @@ import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Link } from 'gatsby'
 
-export function Header() {
+export function HeaderSmall() {
 
     const data = useStaticQuery(graphql`
         query {
@@ -35,26 +35,20 @@ export function Header() {
 
     `)
 
-    const { backgroundheader, btnabout, btndiscord, btngithub, btnhelp, btnhome, btninstagram, btntwitter, paragraphheader, titleheader } = data.blogdata.headers[0]
+    const {backgroundheader, btndiscord, btngithub, btnhelp, btnhome, btninstagram, btntwitter, paragraphheader, titleheader } = data.blogdata.headers[0]
 
     return (
         <S.Body>
           <S.Container id="home">
             <S.NavMenu >
                 <S.BtnLink to="/">Inicio</S.BtnLink>
-                <S.Btn href="#project" >{btnhome}</S.Btn>
-                <S.Btn href="#about">{btnabout}</S.Btn>
                 <S.Btn href="#contact">{btnhelp}</S.Btn>
             </S.NavMenu>
 
             <S.BoxLogo>
               <S.Avatar src={backgroundheader.url} alt=""/>
-              <S.BoxText>
-                <S.Title>{titleheader}</S.Title>
-                <S.SubTitle>{paragraphheader}</S.SubTitle>
-              </S.BoxText>
             </S.BoxLogo>
-
+      
             <S.NavSocial>
               <Link to="https://github.com/fernandorussie" target="_blank">
                 <S.BtnSocial src={btngithub.url} alt=""/>

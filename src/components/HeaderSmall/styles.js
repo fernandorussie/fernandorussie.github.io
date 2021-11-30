@@ -10,23 +10,15 @@ export const Body = styled.div`
 `
 export const Container = styled.div` 
     width: 100%;
-    height:85vh;
+    height: 25vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-`
-export const BoxLogo = styled.div` 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 10px 0px;
+    justify-content: space-evenly;
 `
 export const Avatar = styled.img` 
-    width:27vw;
+    width:10vw;
 
     animation: bounce-in-top 1.1s 1.4s both;
-
     @keyframes bounce-in-top {
   0% {
     -webkit-transform: translateY(-500px);
@@ -80,52 +72,14 @@ export const Avatar = styled.img`
   }
 }
 `
-export const BoxText = styled.div` 
-    color: white;
-`
-export const Title = styled.h1` 
-    font-size: 5vw;
-    text-transform: uppercase;
-    cursor: default;
-    
-    animation: text-focus-in 1s linear 1s both;
-
-    @keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-`
-export const SubTitle = styled.h3`
-    width:60%;
-    font-size:1.5vw;
-    font-weight: 300;
-    cursor: default;
-    
-    animation: text-focus-in 1s linear 1s both;
-
-    @keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
+export const BoxLogo = styled.div` 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
 `
 export const NavMenu = styled.div` 
-    width: 30%;
+    width: 25vw;
     height: 7vh;
     display: flex;
     align-items: center;
@@ -160,7 +114,7 @@ export const Btn = styled.a`
     }
 `
 export const NavSocial = styled.div` 
-    width: 30%;
+    width: 25vw;
     height: 7vh;
     display: flex;
     align-items: center;

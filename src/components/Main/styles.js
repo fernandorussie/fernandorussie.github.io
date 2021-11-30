@@ -58,6 +58,8 @@ export const IntroAbout = styled.div`
 `
 export const TextAbout = styled.div` 
     font-size: 2vw;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
     text-align: justify;
     color: #6420ff;
 `
@@ -80,6 +82,7 @@ export const BoxTitleProject = styled.div`
 export const TitleMyProjects = styled.p` 
     font-size: 5vw;
     font-weight: 900;
+    font-family: fontBold;
     text-transform: uppercase;
     cursor: pointer;
     color: #6420ff;
@@ -147,12 +150,15 @@ export const Discription = styled.div`
 export const Name = styled.h2` 
     font-size: 2vw;
     font-weight:900;
+    font-family: 'Roboto', sans-serif;;
     text-transform: uppercase;
     text-decoration: none;
     margin:15px 0px;
 `
 export const Subtitle = styled.p` 
-    font-size: 1.4vw;
+    font-size: 1.2vw;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     margin-bottom:15px;
 `
