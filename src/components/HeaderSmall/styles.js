@@ -79,13 +79,16 @@ export const BoxLogo = styled.div`
     margin: 10px 0px;
 `
 export const NavMenu = styled.div` 
-    width: 25vw;
+    width: 28vw;
     height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
 `
 export const BtnLink = styled(Link)` 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5vw;
     font-weight: 900;
     text-transform: uppercase;
@@ -93,13 +96,19 @@ export const BtnLink = styled(Link)`
     color: white;
     cursor: pointer;
 
-    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    
     &:hover{
-      transform: scale(1.02);
+      color: white;
       margin-bottom: 7px;
+
+      text-shadow: 0 0 10px #FFFFFF;
     }
 `
-export const Btn = styled.a`  
+export const Btn = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5vw;
     font-weight: 900;
     text-transform: uppercase;
@@ -107,10 +116,12 @@ export const Btn = styled.a`
     color: white;
     cursor: pointer;
 
-    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     &:hover{
-      transform: scale(1.02);
+      color: white;
       margin-bottom: 7px;
+
+      text-shadow: 0 0 10px #FFFFFF;
     }
 `
 export const NavSocial = styled.div` 
@@ -120,14 +131,15 @@ export const NavSocial = styled.div`
     align-items: center;
     justify-content: space-around;
 `
-export const BtnSocial = styled.img` 
+export const BtnSocial = styled.svg` 
     width: 30px;
-    fill: white;
+    fill: #fff;
     cursor: pointer;
 
-    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     &:hover{
-        fill: green;
+        border-radius: 6px;
         margin-bottom: 7px;
+        box-shadow: 0 0 10px #FFFFFF;
     }
 `

@@ -2,6 +2,7 @@ import React from 'react'
 import * as S from './styles'
 import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from 'gatsby'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 export function Main() {
 
@@ -53,14 +54,14 @@ export function Main() {
                             <S.Subtitle>{textrecipes}</S.Subtitle>
                         </S.Discription>
                     </S.CardProject>
-                    <S.CardProject to="https://github.com/fernandorussie/TaxiProject" target="_blank" >
+                    <S.CardProject to="/taxis">
                     <S.Imagem back={imgtaxis.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titletaxis}</S.Name>
                             <S.Subtitle>{texttaxis}</S.Subtitle>
                         </S.Discription>
                     </S.CardProject>
-                    <S.CardProject to="https://valorantvnw.netlify.app" target="_blank">
+                    <S.CardProject to="/valorant">
                         <S.Imagem back={imgvalorant.url}></S.Imagem>
                         <S.Discription>
                             <S.Name>{titlevalorant}</S.Name>

@@ -18,7 +18,6 @@ export const ContainerMainSlide = styled.div`
     justify-content: space-between;
     flex-direction: column;
     background-color: #6F7FFB;
-    border-radius: 2px;
 `
 export const ImageMain = styled.img`
     width: 100%;
@@ -44,14 +43,12 @@ export const Title = styled.p`
     font-size: 5vw;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 0px #000000;
     cursor: default;
 `
 export const Paragraph = styled.p` 
     font-size: 1.6vw;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 0px 0px 1px #fff;
     cursor: default;
 `
 export const BoxImage1 = styled.div`
@@ -75,12 +72,4 @@ export const BoxImage3 = styled.div`
 export const ImageExemple = styled.img` 
     width: 55vw;
     height: 60vh;
-    border-radius: 2px;
-    box-shadow:1px 10px 40px -20px rgba(0,0,0,0.7);
-
-    transition: 1s ease 0s;
-    &:hover{
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-        transform: scale(1.1);  
-    }   
 `

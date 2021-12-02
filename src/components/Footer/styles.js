@@ -6,7 +6,7 @@ export const ContainerFooter =styled.div`
     height: 50vh;
     display: flex;
     flex-direction:column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #6420ff;
     position: relative;
@@ -73,8 +73,9 @@ export const AvatarFixed = styled.div`
 `
 export const IntroFooter =styled.div` 
     width: 85%;
+    height: 25vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 `
 export const BoxLogo =styled.a` 
@@ -83,6 +84,69 @@ export const BoxLogo =styled.a`
 `
 export const Logo =styled.img` 
     width: 6vw;
+
+  animation-name: shake-center;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+@keyframes shake-center {
+  5%{
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  10%{
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  20%{
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%{
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+  40%{
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  45%{
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  60%{
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  65%{
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  80%{
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  85%{
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+  95%{
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+}
 `
 export const NavFooter =styled.div` 
     width: 90%;
@@ -111,10 +175,25 @@ export const StyledLink = styled(Link)`
     margin-bottom: 5px;
     cursor: pointer;
     text-decoration: none;
+
+    transition:all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    &:hover{
+      color: white;
+      text-shadow: 0 0 10px #FFFFFF;
+    }
+    
+    ${AvatarFixed}:hover &{
+      transform: scale(1.02);
+      color: white;
+      margin-bottom: 7px;
+
+      text-shadow: 0 0 10px #FFFFFF;
+    }
 `
 export const ContentLink = styled.p` 
     font-size: 1.6vw;
     font-weight: 400;
+    cursor: default;
 `
 export const BtnNav = styled.div` 
     display: flex;
@@ -128,10 +207,11 @@ export const BtnNav = styled.div`
     cursor: pointer;
 `
 export const BoxCopy =styled.div` 
-    height: 7vh;
+    height: 10%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-size:1vw;
     color: white;
+    cursor: default;
 `

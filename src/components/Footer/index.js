@@ -1,6 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 export function Footer() {
 
@@ -30,7 +31,7 @@ export function Footer() {
     return (
         <S.ContainerFooter>
             <S.AvatarFixed>
-                <S.BoxLogo href="#home">
+                <S.BoxLogo onClick={() => scrollTo('#home')}>
                     <S.Logo src={logo.url} alt="" />
                     <S.StyledLink>{btnhome}</S.StyledLink>
                 </S.BoxLogo>

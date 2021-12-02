@@ -24,6 +24,7 @@ export const BoxTitleAbout = styled.div`
 export const TitleAbout = styled.p` 
     font-size: 5vw;
     font-weight: 900;
+    font-family: fontBold;
     text-transform: uppercase;
     color: #6420ff;
     cursor: pointer;

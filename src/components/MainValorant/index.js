@@ -3,7 +3,7 @@ import { Slide } from './slide'
 import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
 
-export function MainRecipes() {
+export function MainValorant() {
 
     const data = useStaticQuery(graphql`
         query {
@@ -31,9 +31,7 @@ export function MainRecipes() {
     return (
         <S.ContainerMain>
             <S.ContainerMainSlide>
-                <a href="https://recipesvnw.netlify.app" target="_blank">
-                    <S.ImageMain src={exemplephoto1.url} alt="" />
-                </a>
+                <S.ImageMain src={exemplephoto1.url} alt="" />
                 <S.ContentCenter>
                         <S.BoxText>
                             <S.Title>Um pouco sobre Recipes</S.Title>

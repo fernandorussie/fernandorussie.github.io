@@ -2,8 +2,8 @@ import React from 'react'
 import '../global/global.css'
 import { Helmet } from 'react-helmet'
 import { HeaderSmall } from '../components/HeaderSmall'
+import { MainRecipes } from '../components/MainRecipes'
 import { Footer } from '../components/Footer'
-import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import styled from "styled-components";
 const Div = styled.div` 
@@ -26,12 +26,6 @@ const Box = styled.div`
 `
 const Image = styled.img` 
   width: 10vw;
-  filter: brightness(60%);
-    transition-property: filter;
-    transition-duration: 0.3s;
-    &:hover{
-      filter: brightness(150%);
-    }
 `
 const A = styled.a` 
   color: white;
@@ -40,13 +34,12 @@ const A = styled.a`
     color: #6F7FFB;
   }
 `
-
-export default function Valorant() {
+export default function About() {
 
   return (
     <div>
         <Helmet>
-          <title>Valorant - Ferlip</title>
+          <title>Sobre - Ferlip</title>
           <link href="https://media.graphcms.com/OHC7wSqXTfyZhk1hF86r" rel="icon" type="image/x-icon" />
         </Helmet>
         <HeaderSmall />
@@ -55,7 +48,7 @@ export default function Valorant() {
             <p>Pagina em construção!</p>
             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Underconstruction_icon_gray.svg/1219px-Underconstruction_icon_gray.svg.png" alt=""/>
           </Box>
-            <p>Veja online <A href="https://valorantvnw.netlify.app" target="_blank">aqui.</A></p>
+            <p>Veja online <A href="https://recipesvnw.netlify.app" target="_blank">aqui.</A></p>
         </Div>
         <Footer />
     </div>
