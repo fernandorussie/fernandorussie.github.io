@@ -1,8 +1,6 @@
 import React from 'react'
 import * as S from './styles'
-import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from 'gatsby'
-import scrollTo from 'gatsby-plugin-smoothscroll';
 
 export function Main() {
 
@@ -72,10 +70,10 @@ export function Main() {
             </S.ContainerProject>
             <S.ContainerAbout id="about">
                 <S.BoxTitleAbout>
-                    <S.TitleAbout>{titleabout}</S.TitleAbout>
+                    <S.TitleAbout href="/about">{titleabout}</S.TitleAbout>
                 </S.BoxTitleAbout>
                 <S.BoxContentAbout>
-                    <S.BoxImageAbout>
+                    <S.BoxImageAbout href="/about">
                         <S.ImageAbout src={imgabout.url} alt=""/>
                     </S.BoxImageAbout>
                     <S.IntroAbout>

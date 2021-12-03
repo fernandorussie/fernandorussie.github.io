@@ -2,9 +2,9 @@ import React from 'react'
 import '../global/global.css'
 import { Helmet } from 'react-helmet'
 import { HeaderSmall } from '../components/HeaderSmall'
-import { MainRecipes } from '../components/MainRecipes'
+import { PageRecipes } from '../components/MainPages/indexrecipes'
 import { Footer } from '../components/Footer'
-import scrollTo from 'gatsby-plugin-smoothscroll';
+
 
 import styled from "styled-components";
 const Div = styled.div` 
@@ -44,7 +44,7 @@ export default function Recipes() {
           <link href="https://media.graphcms.com/OHC7wSqXTfyZhk1hF86r" rel="icon" type="image/x-icon" />
         </Helmet>
         <HeaderSmall />
-        <MainRecipes />
+        <PageRecipes />
         {/* <Div>
           <Box>
             <p>Pagina em construção!</p>

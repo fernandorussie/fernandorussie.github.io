@@ -2,7 +2,6 @@ import React from 'react'
 import '../global/global.css'
 import { Helmet } from 'react-helmet'
 import { HeaderSmall } from '../components/HeaderSmall'
-import { MainRecipes } from '../components/MainRecipes'
 import { Footer } from '../components/Footer'
 
 import styled from "styled-components";

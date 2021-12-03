@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import Slider from "react-slick";
 import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from "react-helmet";
@@ -68,4 +68,4 @@ export function Slide() {
             </Slider>
         </S.ContainerSlide>
     )
-}
+}*/

@@ -21,11 +21,12 @@ export const BoxTitleAbout = styled.div`
     display: flex;
     align-items: center;
 `
-export const TitleAbout = styled.p` 
+export const TitleAbout = styled(Link)` 
     font-size: 5vw;
     font-weight: 900;
     font-family: fontBold;
     text-transform: uppercase;
+    text-decoration: none;
     color: #6420ff;
     cursor: pointer;
 `
@@ -37,7 +38,7 @@ export const BoxContentAbout = styled.div`
     align-items: center;
     justify-content: space-around;
 `
-export const BoxImageAbout = styled.div` 
+export const BoxImageAbout = styled(Link)` 
     width: 50%;
     min-width: 300px;
     display: flex;

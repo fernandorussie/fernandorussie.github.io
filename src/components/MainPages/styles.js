@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
 export const ContainerMain = styled.div`    
     width: 100%;
-    height: 400vh;
+    height: 425vh;
     display: flex;
     justify-content: center;
     padding: 5rem 0;
@@ -37,7 +36,7 @@ export const BoxText = styled.div`
     justify-content: space-between;
     flex-direction: column;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
     color: #fff;
 `
 export const Title = styled.p` 
@@ -72,15 +71,41 @@ export const BoxImage3 = styled.div`
     justify-content: left;
     margin: 10px 0;
 `
+export const OverImage = styled.div` 
+    position: relative;
+    width: 55vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin:10px;
+    border-radius: 4px;
+    box-shadow:1px 10px 40px -20px rgba(0,0,0,0.7);
+`
+export const Skill = styled.div`  
+    position: absolute;
+    width: 55vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition:all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    ${OverImage}:hover & {
+        z-index: 3;
+    } 
+`
 export const ImageExemple = styled.img` 
     width: 55vw;
     height: 60vh;
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow:1px 10px 40px -20px rgba(0,0,0,0.7);
+    z-index: 2;
 
-    transition: 1s ease 0s;
-    &:hover{
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-        transform: scale(1.1);  
-    }   
+    transition:all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    ${OverImage}:hover & {
+        transform: scale(1.25);
+        opacity: 0.3;
+    }  
 `

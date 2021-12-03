@@ -1,14 +1,13 @@
 import React from 'react'
-import { Slide } from './slide'
 import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
 
-export function MainRecipes() {
+export function PageValorant() {
 
     const data = useStaticQuery(graphql`
         query {
             blogdata {
-                recipes {
+                pageprojects {
                     exemplephoto1 {
                       url
                     }
@@ -21,40 +20,50 @@ export function MainRecipes() {
                     exemplephoto4 {
                       url
                     }
-                  }
+                    subtitle
+                    textabout
+                    textabout2
+                    title
+                }
             }
         }
     `)
 
-    const { exemplephoto1,exemplephoto2,exemplephoto3,exemplephoto4 } = data.blogdata.recipes[0]
+    const { 
+    exemplephoto1,exemplephoto2,
+    exemplephoto3,exemplephoto4,
+    subtitle, textabout,textabout2,
+    title } = data.blogdata.pageprojects[1]
 
     return (
         <S.ContainerMain>
             <S.ContainerMainSlide>
-                <a href="https://recipesvnw.netlify.app" target="_blank">
+                <a href="https://valorantvnw.netlify.app" target="_blank">
                     <S.ImageMain src={exemplephoto1.url} alt="" />
                 </a>
                 <S.ContentCenter>
                         <S.BoxText>
-                            <S.Title>Um pouco sobre Recipes</S.Title>
-                            <S.Paragraph>Este projeto é uma reprodução de um layout, 
-                            aqui coloquei em pratica a utilização de Gatsby, Styled-Component, 
-                            GraphQl, GraphCMS... entre outros plugin's e bibliotecas.</S.Paragraph>
+                            <S.Title>{title}</S.Title>
+                            <S.Paragraph>{textabout}</S.Paragraph>
                         </S.BoxText>
                         <S.BoxImage1>
-                            <S.ImageExemple src={exemplephoto2.url} alt="" />
+                            <S.OverImage>
+                                <S.ImageExemple src={exemplephoto2.url} alt="" />
+                            </S.OverImage>
                         </S.BoxImage1>
                         <S.BoxImage2>
-                            <S.ImageExemple src={exemplephoto3.url} alt="" />
+                            <S.OverImage>
+                                <S.ImageExemple src={exemplephoto3.url} alt="" />
+                            </S.OverImage>
                         </S.BoxImage2>
                         <S.BoxText>
-                            <S.Title>Um pouco mais</S.Title>
-                            <S.Paragraph>Este projeto é uma reprodução de um layout, 
-                            aqui coloquei em pratica a utilização de Gatsby, Styled-Component, 
-                            GraphQl, GraphCMS... entre outros plugin's e bibliotecas.</S.Paragraph>
+                            <S.Title>{subtitle}</S.Title>
+                            <S.Paragraph>{textabout2}</S.Paragraph>
                         </S.BoxText>
                         <S.BoxImage3>
-                            <S.ImageExemple src={exemplephoto4.url} alt="" />
+                            <S.OverImage>
+                                <S.ImageExemple src={exemplephoto4.url} alt="" />
+                            </S.OverImage>
                         </S.BoxImage3>
                 </S.ContentCenter>
             </S.ContainerMainSlide>
