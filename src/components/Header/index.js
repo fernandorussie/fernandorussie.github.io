@@ -36,7 +36,7 @@ export function Header() {
 
     `)
 
-    const { backgroundheader, btnabout, btndiscord, btngithub, btnhelp, btnhome, btninstagram, btntwitter, paragraphheader, titleheader } = data.blogdata.headers[0]
+    const { backgroundheader, btnabout, btnhelp, btnhome, paragraphheader, titleheader } = data.blogdata.headers[0]
 
     return (
         <S.Body>

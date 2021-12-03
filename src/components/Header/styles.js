@@ -15,6 +15,10 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media(max-width: 768px) {
+        height:50vh;
+    }
 `
 export const BoxLogo = styled.div` 
     display: flex;
@@ -79,9 +83,16 @@ export const Avatar = styled.img`
             animation-timing-function: ease-out;
   }
 }
+
+@media(max-width: 768px) {
+        width: 17vw;
+    }
 `
 export const BoxText = styled.div` 
     color: white;
+    @media(max-width: 768px) {
+        display: none;
+    }
 `
 export const Title = styled.h1` 
     font-size: 5vw;
@@ -183,5 +194,9 @@ export const BtnSocial = styled.svg`
         border-radius: 6px;
         margin-bottom: 7px;
         box-shadow: 0 0 10px #FFFFFF;
+    }
+
+    @media(max-width: 768px) {
+        width: 4vw;
     }
 `

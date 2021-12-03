@@ -36,7 +36,7 @@ export function HeaderSmall() {
 
     `)
 
-    const {backgroundheader,btnabout, btnhelp, btnhome, btninstagram, btntwitter, paragraphheader, titleheader } = data.blogdata.headers[0]
+    const {backgroundheader,btnabout, btnhelp } = data.blogdata.headers[0]
 
     return (
         <S.Body>

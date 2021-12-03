@@ -62,9 +62,6 @@ export function PageRecipes() {
                         </S.BoxText>
                         <S.BoxImage3>
                             <S.OverImage>
-                                <S.Skill>
-                                    <img src="https://img.shields.io/badge/Gatsby-%23663399.svg?style=for-the-badge&logo=gatsby&logoColor=white" alt="gatsby"/>
-                                </S.Skill>
                                 <S.ImageExemple src={exemplephoto4.url} alt="" />
                             </S.OverImage>
                         </S.BoxImage3>

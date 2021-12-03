@@ -14,6 +14,10 @@ export const ContainerAbout = styled.div`
     justify-content: space-evenly;
     flex-direction: column;
     padding:30px;
+
+    @media(max-width: 768px) {
+        align-items: center;
+    }
 `
 export const BoxTitleAbout = styled.div`
     width: 50%;
@@ -29,6 +33,12 @@ export const TitleAbout = styled(Link)`
     text-decoration: none;
     color: #6420ff;
     cursor: pointer;
+    
+    @media(max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 `
 export const BoxContentAbout = styled.div` 
     width:100%;
@@ -37,6 +47,10 @@ export const BoxContentAbout = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
 `
 export const BoxImageAbout = styled(Link)` 
     width: 50%;
@@ -57,6 +71,10 @@ export const IntroAbout = styled.div`
     margin: 50px;
     padding: 20px;
     
+    @media(max-width: 768px) {
+        margin: 20px;
+        padding: 0;
+    }
 `
 export const TextAbout = styled.div` 
     font-size: 2vw;
@@ -64,6 +82,11 @@ export const TextAbout = styled.div`
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     color: #6420ff;
+
+    @media(max-width: 768px) {
+        font-size: 2.5vw;
+        text-align: left;
+    }
 `
 
 export const ContainerProject = styled.div` 
@@ -80,6 +103,11 @@ export const BoxTitleProject = styled.div`
     height: 15%;
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    @media(max-width: 768px) {
+        width: 100%;
+    }
 `
 export const TitleMyProjects = styled.p` 
     font-size: 5vw;
@@ -116,6 +144,10 @@ export const CardProject = styled(Link)`
     box-shadow:  15px 15px 27px black, -15px -15px 27px black;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     
+    @media(max-width: 768px) {
+        min-width: 260px;
+        height: 280px;
+    }
 `
 export const Imagem = styled.div` 
     background-image: url(${props => props.back});
@@ -131,6 +163,10 @@ export const Imagem = styled.div`
     
     ${CardProject}:hover & {
        height:100%;
+    }
+
+    @media(max-width: 768px) {
+        height: 50%;
     }
 `
 export const Discription = styled.div` 
@@ -148,6 +184,10 @@ export const Discription = styled.div`
         height:0%;
         padding:0px 16px;
     }
+
+    @media(max-width: 768px) {
+        height: 50%;
+    }
 `
 export const Name = styled.h2` 
     font-size: 2vw;
@@ -156,6 +196,10 @@ export const Name = styled.h2`
     text-transform: uppercase;
     text-decoration: none;
     margin:15px 0px;
+
+    @media(max-width: 768px) {
+        font-size: 3vw;
+    }
 `
 export const Subtitle = styled.p` 
     font-size: 1.2vw;
@@ -163,4 +207,8 @@ export const Subtitle = styled.p`
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     margin-bottom:15px;
+
+    @media(max-width: 768px) {
+        font-size: 1.8vw;
+    }
 `

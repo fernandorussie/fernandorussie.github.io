@@ -10,6 +10,11 @@ export const ContainerFooter =styled.div`
     align-items: center;
     background-color: #6420ff;
     position: relative;
+
+    @media(max-width: 768px) {
+      height: 25vh;
+      justify-content: space-around;
+    }
 `
 export const AvatarFixed = styled.div` 
     position: fixed;
@@ -77,6 +82,12 @@ export const IntroFooter =styled.div`
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
+    @media(max-width: 768px) {
+      width: 100%;
+      height: 25%;
+      align-items: center;
+    }
 `
 export const BoxLogo =styled.a` 
     cursor: pointer;
@@ -189,11 +200,19 @@ export const StyledLink = styled(Link)`
 
       text-shadow: 0 0 10px #FFFFFF;
     }
+
+    @media(max-width: 768px) {
+      font-size: 1.8vw;
+    }
 `
 export const ContentLink = styled.p` 
     font-size: 1.6vw;
     font-weight: 400;
     cursor: default;
+
+    @media(max-width: 768px) {
+      font-size: 1.7vw;
+    }
 `
 export const BtnNav = styled.div` 
     display: flex;
@@ -214,4 +233,8 @@ export const BoxCopy =styled.div`
     font-size:1vw;
     color: white;
     cursor: default;
+
+    @media(max-width: 768px) {
+      font-size: 1.4vw;
+    }
 `

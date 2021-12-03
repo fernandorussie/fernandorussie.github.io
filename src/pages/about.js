@@ -26,13 +26,6 @@ const Box = styled.div`
 const Image = styled.img` 
   width: 10vw;
 `
-const A = styled.a` 
-  color: white;
-
-  &:hover{
-    color: #6F7FFB;
-  }
-`
 export default function About() {
 
   return (
@@ -47,7 +40,6 @@ export default function About() {
             <p>Pagina em construção!</p>
             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Underconstruction_icon_gray.svg/1219px-Underconstruction_icon_gray.svg.png" alt=""/>
           </Box>
-            <p>Veja online <A href="https://recipesvnw.netlify.app" target="_blank">aqui.</A></p>
         </Div>
         <Footer />
     </div>
