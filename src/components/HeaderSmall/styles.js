@@ -71,6 +71,9 @@ export const Avatar = styled.img`
             animation-timing-function: ease-out;
   }
 }
+@media(max-width: 768px){
+        width:17vw;
+}
 `
 export const BoxLogo = styled.div` 
     display: flex;
@@ -104,6 +107,9 @@ export const BtnLink = styled(Link)`
 
       text-shadow: 0 0 10px #FFFFFF;
     }
+    @media(max-width: 768px){
+        font-size: 1.7vw;
+        }
 `
 export const Btn = styled.a`
     display: flex;
@@ -123,6 +129,9 @@ export const Btn = styled.a`
 
       text-shadow: 0 0 10px #FFFFFF;
     }
+    @media(max-width: 768px){
+        font-size: 1.7vw;
+        }
 `
 export const NavSocial = styled.div` 
     width: 25vw;
@@ -142,4 +151,7 @@ export const BtnSocial = styled.svg`
         margin-bottom: 7px;
         box-shadow: 0 0 10px #FFFFFF;
     }
+    @media(max-width: 768px){
+        width:3.5vw;
+        }
 `

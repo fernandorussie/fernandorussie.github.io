@@ -2,11 +2,14 @@ import styled from 'styled-components'
 
 export const ContainerMain = styled.div`    
     width: 100%;
-    height: 425vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     padding: 5rem 0;
     background-color: #191919;
+    @media(max-width: 768px){
+        
+    }
 `
 
 export const ContainerMainSlide = styled.div` 
@@ -18,6 +21,11 @@ export const ContainerMainSlide = styled.div`
     flex-direction: column;
     background-color: #6420ff;
     border-radius: 2px;
+    @media(max-width: 768px) {
+        width: 100%;
+        align-items: initial;
+        justify-content: initial;
+    }
 `
 export const ImageMain = styled.img`
     width: 100%;
@@ -28,6 +36,12 @@ export const ContentCenter = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    @media(max-width: 768px) {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: flex-start;
+    }
 `
 export const BoxText = styled.div`  
     width: 100%;
@@ -38,6 +52,9 @@ export const BoxText = styled.div`
     padding: 10px;
     margin: 10px 0;
     color: #fff;
+    @media(max-width: 768px) {
+        width: 90%;
+    }
 `
 export const Title = styled.p` 
     font-size: 5vw;
@@ -58,18 +75,27 @@ export const BoxImage1 = styled.div`
     align-items: center;
     justify-content: left;
     margin: 10px 0;
+    @media(max-width: 768px) {
+        justify-content: center;
+    }
 `
 export const BoxImage2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: right;
     margin: 10px 0;
+    @media(max-width: 768px) {
+        justify-content: center;
+    }
 `
 export const BoxImage3 = styled.div`
     display: flex;
     align-items: center;
     justify-content: left;
     margin: 10px 0;
+    @media(max-width: 768px) {
+        justify-content: center;
+    }
 `
 export const OverImage = styled.div` 
     position: relative;
@@ -82,6 +108,12 @@ export const OverImage = styled.div`
     margin:10px;
     border-radius: 4px;
     box-shadow:1px 10px 40px -20px rgba(0,0,0,0.7);
+    
+    @media(max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        margin: 0; 
+    }
 `
 export const Skill = styled.div`  
     position: absolute;
@@ -93,6 +125,11 @@ export const Skill = styled.div`
     transition: ease-in 0.9s;
     background: linear-gradient(90deg, rgba(255,255,255,0.19371498599439774) 0%, rgba(255,255,255,0.3029586834733894) 50%, rgba(255,255,255,0.19371498599439774) 100%);
     
+    @media(max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        margin: 0; 
+    }
 `
 export const ImageExemple = styled.img` 
     width: 55vw;
@@ -104,4 +141,10 @@ export const ImageExemple = styled.img`
     ${OverImage}:hover & {
         transform: scale(1.25);
     }  
+
+    @media(max-width: 768px) {
+        width: 100%;
+        height: unset;
+        margin: 0; 
+    }
 `

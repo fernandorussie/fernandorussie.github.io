@@ -158,6 +158,9 @@ export const Logo =styled.img`
     transform-origin: 50% 50%;
   }
 }
+@media(max-width: 768px){
+        width: 8.5vw;
+      }
 `
 export const NavFooter =styled.div` 
     width: 90%;
@@ -186,7 +189,8 @@ export const StyledLink = styled(Link)`
     margin-bottom: 5px;
     cursor: pointer;
     text-decoration: none;
-
+    text-shadow: 1px 1px 0px #000000;
+    
     transition:all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     &:hover{
       color: white;
@@ -202,7 +206,7 @@ export const StyledLink = styled(Link)`
     }
 
     @media(max-width: 768px) {
-      font-size: 1.8vw;
+      font-size: 1.9vw;
     }
 `
 export const ContentLink = styled.p` 

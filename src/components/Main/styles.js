@@ -57,10 +57,15 @@ export const BoxImageAbout = styled(Link)`
     min-width: 300px;
     display: flex;
     align-items: center;
+
+    @media(max-width: 768px) {
+        min-width:70%;
+    }
 `
 export const ImageAbout = styled.img` 
     width: 100%;
     cursor: pointer;
+
 `
 export const IntroAbout = styled.div` 
     width: 40%;
