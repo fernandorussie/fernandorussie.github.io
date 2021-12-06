@@ -194,7 +194,6 @@ export const Btn = styled.a`
     }
     @media(max-width: 425px){
         font-size: 2.5vw;
-        background-color:red;
         }
 `
 export const NavSocial = styled.div` 
