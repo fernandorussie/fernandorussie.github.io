@@ -15,7 +15,7 @@ export const ContainerFooter =styled.div`
       height: 25vh;
       justify-content: space-around;
     }
-    @media(max-width: 375px) {
+    @media(max-width: 425px) {
       height: 30vh;
       justify-content: space-evenly;
       }
@@ -164,7 +164,7 @@ export const Logo =styled.img`
 @media(max-width: 768px){
         width: 8.5vw;
       }
-      @media(max-width: 375px) {
+      @media(max-width: 425px) {
           width: 13vw;
       }
 `
@@ -214,7 +214,7 @@ export const StyledLink = styled(Link)`
     @media(max-width: 768px) {
       font-size: 1.9vw;
     }
-    @media(max-width: 375px) {
+    @media(max-width: 425px) {
       font-size: 2.5vw;
       }
 `
@@ -226,7 +226,7 @@ export const ContentLink = styled.p`
     @media(max-width: 768px) {
       font-size: 1.7vw;
     }
-    @media(max-width: 375px) {
+    @media(max-width: 425px) {
       font-size: 2.3vw;
       }
 `

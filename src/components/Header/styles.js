@@ -19,8 +19,8 @@ export const Container = styled.div`
     @media(max-width: 768px) {
         height:50vh;
 }
-    @media(max-width: 375px){
-        height:32vh;
+    @media(max-width: 425px){
+        height:35vh;
         justify-content: space-around;
         }
 `
@@ -29,7 +29,7 @@ export const BoxLogo = styled.div`
     align-items: center;
     justify-content: space-around;
     margin: 10px 0px;
-    @media(max-width: 375px){
+    @media(max-width: 425px){
        margin: 5px 0;
         }
 `
@@ -94,7 +94,7 @@ export const Avatar = styled.img`
 @media(max-width: 768px) {
         width: 17vw;
     }
-    @media(max-width: 375px){
+    @media(max-width: 425px){
         width: 27vw;
         }
 `
@@ -151,7 +151,7 @@ export const NavMenu = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    @media(max-width: 375px){
+    @media(max-width: 425px){
         width: 50%;
         }
 `
@@ -172,7 +172,7 @@ export const BtnLink = styled(Link)`
 
       text-shadow: 0 0 10px #FFFFFF;
     }
-    @media(max-width: 375px){
+    @media(max-width: 425px){
         font-size: 2.5vw;
         }
 `
@@ -192,7 +192,7 @@ export const Btn = styled.a`
 
       text-shadow: 0 0 10px #FFFFFF;
     }
-    @media(max-width: 375px){
+    @media(max-width: 425px){
         font-size: 2.5vw;
         background-color:red;
         }
