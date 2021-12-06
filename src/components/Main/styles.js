@@ -18,12 +18,20 @@ export const ContainerAbout = styled.div`
     @media(max-width: 768px) {
         align-items: center;
     }
+    @media(max-width: 375px) {
+        min-height: 50vh;
+        justify-content: center;
+        padding: 0;
+    }
 `
 export const BoxTitleAbout = styled.div`
     width: 50%;
     height: 15%;
     display: flex;
     align-items: center;
+    @media(max-width: 375px) {
+        margin: 10px 0;
+    }
 `
 export const TitleAbout = styled(Link)` 
     font-size: 5vw;
@@ -39,6 +47,9 @@ export const TitleAbout = styled(Link)`
         display: flex;
         justify-content: center;
     }
+    @media(max-width: 375px) {
+        font-size: 6vw;
+    }
 `
 export const BoxContentAbout = styled.div` 
     width:100%;
@@ -51,6 +62,9 @@ export const BoxContentAbout = styled.div`
     @media(max-width: 768px) {
         flex-direction: column;
     }
+    @media(max-width: 375px) {
+        justify-content: center;
+    }
 `
 export const BoxImageAbout = styled(Link)` 
     width: 50%;
@@ -60,6 +74,10 @@ export const BoxImageAbout = styled(Link)`
 
     @media(max-width: 768px) {
         min-width:70%;
+    }
+    @media(max-width: 375px) {
+        width: 100%;
+        margin: 10px 0;
     }
 `
 export const ImageAbout = styled.img` 
@@ -80,6 +98,9 @@ export const IntroAbout = styled.div`
         margin: 20px;
         padding: 0;
     }
+    @media(max-width: 375px) {
+        width: 80%;
+    }
 `
 export const TextAbout = styled.div` 
     font-size: 2vw;
@@ -92,6 +113,10 @@ export const TextAbout = styled.div`
         font-size: 2.5vw;
         text-align: left;
     }
+    @media(max-width: 375px) {
+        font-size: 3.8vw;
+    }
+    
 `
 
 export const ContainerProject = styled.div` 
@@ -121,6 +146,9 @@ export const TitleMyProjects = styled.p`
     text-transform: uppercase;
     cursor: pointer;
     color: #6420ff;
+    @media(max-width: 375px) {
+        font-size: 6vw;
+    }
 `
 export const BoxProject = styled.div` 
     width:100%;
@@ -205,6 +233,9 @@ export const Name = styled.h2`
     @media(max-width: 768px) {
         font-size: 3vw;
     }
+    @media(max-width: 375px) {
+        font-size: 5vw;
+    }
 `
 export const Subtitle = styled.p` 
     font-size: 1.2vw;
@@ -215,5 +246,8 @@ export const Subtitle = styled.p`
 
     @media(max-width: 768px) {
         font-size: 1.8vw;
+    }
+    @media(max-width: 375px) {
+        font-size: 3.5vw;
     }
 `

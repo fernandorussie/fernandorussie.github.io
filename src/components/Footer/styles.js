@@ -15,6 +15,10 @@ export const ContainerFooter =styled.div`
       height: 25vh;
       justify-content: space-around;
     }
+    @media(max-width: 375px) {
+      height: 30vh;
+      justify-content: space-evenly;
+      }
 `
 export const AvatarFixed = styled.div` 
     position: fixed;
@@ -74,7 +78,6 @@ export const AvatarFixed = styled.div`
             animation-timing-function: ease-out;
   }
 }
-
 `
 export const IntroFooter =styled.div` 
     width: 85%;
@@ -161,6 +164,9 @@ export const Logo =styled.img`
 @media(max-width: 768px){
         width: 8.5vw;
       }
+      @media(max-width: 375px) {
+          width: 13vw;
+      }
 `
 export const NavFooter =styled.div` 
     width: 90%;
@@ -208,6 +214,9 @@ export const StyledLink = styled(Link)`
     @media(max-width: 768px) {
       font-size: 1.9vw;
     }
+    @media(max-width: 375px) {
+      font-size: 2.5vw;
+      }
 `
 export const ContentLink = styled.p` 
     font-size: 1.6vw;
@@ -217,6 +226,9 @@ export const ContentLink = styled.p`
     @media(max-width: 768px) {
       font-size: 1.7vw;
     }
+    @media(max-width: 375px) {
+      font-size: 2.3vw;
+      }
 `
 export const BtnNav = styled.div` 
     display: flex;
