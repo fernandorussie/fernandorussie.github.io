@@ -27,11 +27,13 @@ export function PageAbout() {
     return (
         <S.ContainerAbout>
             <S.BoxAbout>
-                <S.TitleAbout>{title}</S.TitleAbout>
+                <S.BoxTitleAbout>
+                    <S.TitleAbout>{title}</S.TitleAbout>
+                        <S.BoxImageAbout>
+                            <S.ImageAbout src={imgabout.url} alt=""/>
+                        </S.BoxImageAbout>
+                </S.BoxTitleAbout>
                 <S.BoxContentAbout>
-                    <S.BoxImageAbout>
-                        <S.ImageAbout src={imgabout} alt=""/>
-                    </S.BoxImageAbout>
                     <S.BoxTextAbout>
                         <S.ParagraphAbout>{paragraph1}</S.ParagraphAbout>
                         <S.ParagraphAbout>{paragraph2}</S.ParagraphAbout>

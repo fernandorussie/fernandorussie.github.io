@@ -166,6 +166,13 @@ export const BoxAbout = styled.div`
     justify-content: center;
     flex-direction: column;
 `
+export const BoxTitleAbout = styled.div` 
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+`
 export const TitleAbout = styled.div` 
     font-size: 5vw;
     color: white;
@@ -181,7 +188,7 @@ export const BoxImageAbout = styled.div`
 
 `
 export const ImageAbout = styled.img` 
-
+    width: 150px;
 `
 export const BoxTextAbout = styled.ul` 
     width: 90%;
