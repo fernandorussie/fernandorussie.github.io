@@ -42,7 +42,7 @@ export function Header() {
         <S.Body>
           <S.Container id="home">
             <S.NavMenu >
-                <S.BtnLink to="/">Inicio</S.BtnLink>
+                
                 <S.Btn onClick={() => scrollTo('#project')}>{btnhome}</S.Btn>
                 <S.Btn onClick={() => scrollTo('#about')}>{btnabout}</S.Btn>
                 <S.Btn onClick={() => scrollTo('#contact')}>{btnhelp}</S.Btn>
