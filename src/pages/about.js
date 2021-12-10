@@ -2,6 +2,7 @@ import React from 'react'
 import '../global/global.css'
 import { Helmet } from 'react-helmet'
 import { HeaderSmall } from '../components/HeaderSmall'
+import { PageAbout } from '../components/MainPages/indexabout'
 import { Footer } from '../components/Footer'
 
 import styled from "styled-components";
@@ -35,12 +36,13 @@ export default function About() {
           <link href="https://media.graphcms.com/OHC7wSqXTfyZhk1hF86r" rel="icon" type="image/x-icon" />
         </Helmet>
         <HeaderSmall />
-        <Div>
+        <PageAbout />
+        {/* <Div>
           <Box>
             <p>Pagina em construção!</p>
             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Underconstruction_icon_gray.svg/1219px-Underconstruction_icon_gray.svg.png" alt=""/>
           </Box>
-        </Div>
+        </Div> */}
         <Footer />
     </div>
   )

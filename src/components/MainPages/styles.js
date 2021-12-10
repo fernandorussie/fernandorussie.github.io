@@ -6,7 +6,7 @@ export const ContainerMain = styled.div`
     display: flex;
     justify-content: center;
     padding: 5rem 0;
-    background-color: #191919;
+    background-color: #1A1A1A;
     @media(max-width: 768px){
         
     }
@@ -147,4 +147,54 @@ export const ImageExemple = styled.img`
         height: unset;
         margin: 0; 
     }
+`
+
+// --- --- Style About --- --- //
+
+export const ContainerAbout = styled.div` 
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+`
+export const BoxAbout = styled.div` 
+    width: 80%;
+    height: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`
+export const TitleAbout = styled.div` 
+    font-size: 5vw;
+    color: white;
+`
+export const BoxContentAbout = styled.div` 
+    height: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`
+export const BoxImageAbout = styled.div` 
+
+`
+export const ImageAbout = styled.img` 
+
+`
+export const BoxTextAbout = styled.ul` 
+    width: 90%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border: 2px solid #6420ff;
+`
+export const ParagraphAbout = styled.li` 
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-left: 10px;
+    color: white;
 `
