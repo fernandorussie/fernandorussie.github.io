@@ -8,7 +8,6 @@ export const ContainerMain = styled.div`
     padding: 5rem 0;
     background-color: #1A1A1A;
     @media(max-width: 768px){
-        
     }
 `
 

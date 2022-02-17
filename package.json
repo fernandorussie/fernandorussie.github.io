@@ -1,6 +1,7 @@
 {
   "name": "blog-gatsby",
   "version": "1.0.0",
+  "homepage": "https://fernandorussie.github.io/my-blog",
   "private": true,
   "description": "blog-gatsby",
   "author": "Fernando",
@@ -8,7 +9,8 @@
     "gatsby"
   ],
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "predeploy": "npm run build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d build",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
