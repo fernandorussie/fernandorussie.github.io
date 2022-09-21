@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,900&display=swap');
+@font-face {
+  font-family: "fontBoldOblique";
+  src: url("../fonts/Helvetica-BoldOblique.ttf")
+}
+@font-face {
+  font-family: "fontBold";
+  src: url("../fonts/Helvetica-Bold.ttf")
+}
+@font-face {
+  font-family: "fontNormal";
+  src: url("../fonts/Helvetica.ttf")
+}
+@font-face {
+  font-family: "fontLight";
+  src: url("../fonts/helvetica-light-587ebe5a59211.ttf")
+}
+body{
+  overflow: overlay;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(253, 253, 253);
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: white;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
