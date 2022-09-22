@@ -1,5 +1,5 @@
 <h1>Olá, me chamo Fernando Felip 🚀</h1>
-<h2>Tenho 24 anos, sou um desenvolvedor front-end 💻</h2>
+<h2>Tenho 24 anos e sou um desenvolvedor front-end 💻</h2>
 
 
 <!--*************** Contact ***************-->
